@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query in css video 13</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font: 14px Georgia serif;
+            background: #ccc;
+
+
+        }
+        article,
+        aside,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section{
+            display: block;
+        }
+
+        h2{
+            font: 24px Georgia;
+            margin: 0 0 10px 0;
+
+        }
+        h3{
+            margin: 0 0 8px 0;
+        }
+        p{
+            margin: 0 0 20px 0;
+        }
+        #fluid_wrap{
+            width: 70%;
+            margin: 60px auto;
+            padding: 20px;
+            background: #eee;
+            overflow: hidden;
+        }
+
+        #side_bar{
+            width: 35%;
+            float: left;
+
+        }
+        #side_bar ul{
+            list-style: none;
+        }
+        #side_bar ul li a{
+            color: #900;
+            text-decoration: none;
+            padding: 3px 0;
+            display: block;
+        }
+
+        #main_content{
+            width: 65%;
+            float: right;
+        }
+
+        @media all and (min-width: 1001px) {
+            #side_bar ul li a:after{
+                content: "(" attr(data-email)")";
+                font-size: 11px;
+                font-style: italic;
+                color: gray ;
+            }
+        }
+        @media all and (max-width: 1000px) and (min-width:700px){
+            #side_bar ul li a:before{
+                content:"Eamil:";
+                font-style: italic;
+                color: #666;
+
+            }
+        }
+        @media all and (max-width:699px) and (min-width: 520px), (min-width: 1151px) {
+            #side_bar ul li a{
+                padding-left: 21px;
+                background: url(/email.png) left center no-repeat;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div id="fluid_wrap">
+        <div id="side_bar">
+            <h2>Team Dream Ltd.</h2>
+            <ul id="nav">
+                <li><a data-email="ravishankerk48@gmail.com" href="mailto:ravishankerk48@gmail.com">Ravi</a></li>
+                <li><a data-email="ravishankerk48@gmail.com" href="mailto:ravishankerk48@gmail.com">Ravi</a></li>
+                <li><a data-email="ravishankerk48@gmail.com" href="mailto:ravishankerk48@gmail.com">Ravi</a></li>
+            </ul>
+        </div>
+        <div id="main_content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse minima voluptates quis natus laboriosam numquam quas, exercitationem nobis optio nostrum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ducimus ipsum sed earum laudantium, illum a maiores ipsa, doloremque facilis aut vel odit harum omnis fuga deserunt rerum error saepe!</p>
+        </div>
+    </div>
+</body>
+</html>

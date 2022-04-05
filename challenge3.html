@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Positions</title>
+    <style>
+        body {
+            margin: 0 auto;
+            max-width: 900px;
+            width: 90%;
+        }
+
+        #box {
+            /* float: right; */
+            width: 150px;
+            height: 150px;
+            border-radius: 5px;
+            background-color: lightblue;
+            padding: 1em;
+            margin: 15px;
+        }
+
+        .special {
+            background-color: darkkhaki;
+            padding: 15px;
+            color: white;
+        }
+
+        .cleared {
+            clear: right;
+        }
+
+        p {
+            padding-top: 20px;
+            margin: 0 auto;
+        }
+
+        .sets {
+            width: 90%;
+            height: 300px;
+            border-radius: 5px;
+            background-color: teal;
+            margin: 10px;
+        }
+        .g-2 #box,.g-4 #box{
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sets g-1">
+        <img id="box" src="image.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora mollitia iusto enim harum repellendus
+            corrupti
+            voluptatem nesciunt voluptas, dolore, iste id eius natus nisi optio deleniti dolor perferendis quisquam
+            cumque!
+        </p>
+    </div>
+    <div class="sets g-2">
+        <img id="box" src="image.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora mollitia iusto enim harum repellendus
+            corrupti
+            voluptatem nesciunt voluptas, dolore, iste id eius natus nisi optio deleniti dolor perferendis quisquam
+            cumque!
+        </p>
+    </div>
+    <div class="sets g-3">
+        <img id="box" src="image.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora mollitia iusto enim harum repellendus
+            corrupti
+            voluptatem nesciunt voluptas, dolore, iste id eius natus nisi optio deleniti dolor perferendis quisquam
+            cumque!
+        </p>
+    </div>
+    <div class="sets g-4">
+        <img id="box" src="image.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora mollitia iusto enim harum repellendus
+            corrupti
+            voluptatem nesciunt voluptas, dolore, iste id eius natus nisi optio deleniti dolor perferendis quisquam
+            cumque!
+        </p>
+    </div>
+</body>
+
+</html>
